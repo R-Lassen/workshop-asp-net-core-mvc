@@ -18,11 +18,11 @@ namespace SalesWebMvc.Services
         public List<Seller> FindA11()
         {
             return _context.Seller.ToList();
-        }//SS
+        }
 
         public void Insert(Seller obj)
         {
-            obj.Department = _context.Department.First();
+          
             _context.Add(obj);
             _context.SaveChanges();
         }
